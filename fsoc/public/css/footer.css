@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-*{
+* {
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 }
-body
-{
+
+body {
     height: 100vh;
     width: 100%;
-    background: #171717;
+    background: var(--grey);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-h1
-{
-    color: white;
+
+h1 {
+    color: var(--white);
     font-weight: 500;
     font-size: 2rem;
     margin-bottom: 0rem;
@@ -26,23 +26,23 @@ h1
     word-spacing: 2px;
     margin-bottom: 0.7rem;
 }
-p
-{
+
+p {
     font-size: 0.9rem;
-    color: #d8d8d8;
+    color: var(--white);
 }
-.social_links
-{
+
+.social_links {
     padding: 1rem;
-    background: #383838;
+    background: var(--grey);
     border-radius: 1rem;
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.social_links .combo
-{
+
+.social_links .combo {
     transform: scale(0.9);
     transition: 0.4s ease-in;
     margin: 0 0.5rem;
@@ -50,43 +50,44 @@ p
     width: 3em;
     line-height: 3em;
 }
-.combo .circle
-{
+
+.combo .circle {
     color: #f9f9f9;
     transition: 0.4s ease-in;
     font-size: 3em;
 }
-.combo .icon
-{
-    color: #444343;
+
+.combo .icon {
+    color: var(--grey);
     font-size: 2rem;
     transform: translateY(1px);
     transition: 0.2s ease-in;
 }
-.combo:hover
-{
+
+.combo:hover {
     transform: scale(1.1);
 }
-.combo:hover , .combo:hover .icon
-{
-    color:white;
+
+.combo:hover , .combo:hover .icon {
+    color: var(--white);
 }
-.ig:hover , .ig:hover .circle
-{
+
+.ig:hover , .ig:hover .circle {
     color:#e91e63;
 }
-.fb:hover , .fb:hover .circle
-{
+
+.fb:hover , .fb:hover .circle {
     color:#2196f3;
 }
-.yt:hover , .yt:hover .circle
-{
+
+.yt:hover , .yt:hover .circle {
     color:#f44336;
 }
-.tw:hover , .tw:hover .circle
-{
+
+.tw:hover , .tw:hover .circle {
     color:#2196f3;
 }
-.gt:hover , .gt:hover .circle{
+
+.gt:hover , .gt:hover .circle {
     color: #1f1f1f;
 }
