@@ -68,7 +68,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private $adress;
 
     /**
-     * @ORM\OneToMany(targetEntity=Booking::class, mappedBy="userBooking")
+     * @ORM\OneToMany(targetEntity=Booking::class, mappedBy="user")
      */
     private $bookings;
 
