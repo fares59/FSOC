@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Rouge+Script|Lobster|');
+@import url('https://fonts.googleapis.com/css?family=Rouge+Script|Lobster');
 
 body {
     /** Variables Color*/
@@ -26,12 +26,12 @@ h1,h2,h3,h4,h5,h6{
 .navbar-brand  span{
 	color: #9e821e;
 	font-size:25px;font-weight:700;letter-spacing:0.1em;
-    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+    font-family: 'Rouge Script';
 }
 .navbar-brand {
 	color: #fff;
 	font-size:25px;
-    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+    font-family: 'Rouge Script';
 	font-weight:700;
 	letter-spacing:0.1em;
 }
@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
     letter-spacing: 1px;
     color: #fff;
-   font-family: 'Gothic A1', sans-serif;
+   font-family: 'Rouge Script';
 }
 .navbar-nav .nav-item .nav-link:hover{color:#fed136;}
 .navbar-expand-md .navbar-nav .dropdown-menu{
@@ -85,7 +85,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	color:#fff;
 }
 .banner-sub-heading{
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Rouge Script';
 	font-size: 30px;
     font-weight: 300;
     line-height: 30px;
