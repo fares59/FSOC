@@ -4,13 +4,14 @@ body {
     /** Variables Color*/
     --white : #ffffff;
     --black : #000000;
+	--or : #9e821e;
 
 
     margin: 0;
     padding: 0;
     background-color: var(--black);
     font-family: 'Rouge Script';
-	font-size:16px;
+	font-size:18px;
 }
 
 p{
@@ -19,22 +20,32 @@ p{
 }
 
 h1,h2,h3,h4,h5,h6{
-    color:#323233;
+    color:var(--white);
     text-transform:uppercase;
 }
 
-.navbar-brand  span{
-	color: #9e821e;
-	font-size:25px;font-weight:700;letter-spacing:0.1em;
-    font-family: 'Rouge Script';
+nav {
+	-webkit-transition: padding-top .3s,padding-bottom .3s;
+    -moz-transition: padding-top .3s,padding-bottom .3s;
+    transition: padding-top .3s,padding-bottom .3s;
+    border: none;
 }
+
 .navbar-brand {
-	color: #fff;
 	font-size:25px;
-    font-family: 'Rouge Script';
+	font-family: 'Rouge Script';
 	font-weight:700;
 	letter-spacing:0.1em;
 }
+
+.navbar-brand  span{
+	color: var(--or);
+	font-size:25px;
+	font-weight:700;
+	letter-spacing:0.1em;
+    font-family: 'Rouge Script';
+}
+
 
 .navbar-nav .nav-item .nav-link{
 	padding: 1.1em 1em!important;
@@ -42,71 +53,21 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
     letter-spacing: 1px;
     color: #fff;
-   font-family: 'Rouge Script';
-}
-.navbar-nav .nav-item .nav-link:hover{color:#fed136;}
-.navbar-expand-md .navbar-nav .dropdown-menu{
-	border-top:3px solid #fed136;
-}
-.dropdown-item:hover{background-color:#fed136;color:#fff;}
-nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
-    -moz-transition: padding-top .3s,padding-bottom .3s;
-    transition: padding-top .3s,padding-bottom .3s;
-    border: none;
-	}
-	
- .shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #212529;
-}
-.banner{
-	background-image:url('http://www.hd-freewallpapers.com/latest-wallpapers/abstract-website-backgrounds.jpg');
-	text-align: center;
-    color: #fff;
-   
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-.banner-text{
-	padding:200px 0 150px 0;
-}
-.banner-heading{
-	font-family: 'Lobster', cursive;
-	font-size: 75px;
-    font-weight: 700;
-    line-height: 100px;
-    margin-bottom: 30px;
-	color:#fff;
-}
-.banner-sub-heading{
 	font-family: 'Rouge Script';
-	font-size: 30px;
-    font-weight: 300;
-    line-height: 30px;
-    margin-bottom: 50px;
-	color:#fff;
+}
+.navbar-nav .nav-item .nav-link:hover{color:var(--or);}
+.navbar-expand-md .navbar-nav .dropdown-menu{
+	border-top:3px solid var(--or);
 }
 
-.btn-banner{
-	padding:5px 20px;
-	border-radius:10px;
-	font-weight:700;
-	line-height:1.5;
-	text-align:center;
-	color:#fff;
-	text-transform:uppercase;
+.dropdown-item {
+	background-color: var(--white);
+	color:var(--black);
+	font-size: 22px;
 }
-.text-intro{
-	width:90%;
-	margin:auto;
-	text-align:center;
-	padding-top:30px;
+.dropdown-item:hover{
+	background-color:var(--or);
+	color: var(--white);
 }
 
 
@@ -115,42 +76,14 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 {
 	.navbar-nav{
 		background-color:#000;
-		border-top:3px solid #fed136;
-		color:#fff;
+		border-top:3px solid var(--or);
+		color:var(--white);
 		z-index:1;
 		margin-top:5px;
-		}
+	}
 	.navbar-nav .nav-item .nav-link{
-	padding: 0.7em 1em!important;
-	font-size: 100%;
-    font-weight: 500;
+		padding: 0.7em 1em!important;
+		font-size: 100%;
+		font-weight: 500;
     }
-	.banner-text{
-	padding:150px 0 150px 0;
 }
-.banner-heading{
-	font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 20px;
-}
-.banner-sub-heading{
-	font-size: 10px;
-    font-weight: 200;
-    line-height: 10px;
-    margin-bottom: 40px;
-}
-
-}
-
-@media (max-width:768px){
-	.banner-text{
-	padding:150px 0 150px 0;
-}
-	.banner-sub-heading{
-	font-size: 23px;
-    font-weight: 200;
-    line-height: 23px;
-    margin-bottom: 40px;
-}
-}
- 
