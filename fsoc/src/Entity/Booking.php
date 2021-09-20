@@ -42,6 +42,11 @@ class Booking
      */
     private $userBooking;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=User::class, inversedBy="bookings")
+     */
+    private $user;
+
 
     public function getId(): ?int
     {
@@ -104,6 +109,18 @@ class Booking
     public function setUserBooking(?User $userBooking): self
     {
         $this->userBooking = $userBooking;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->user;
+    }
+
+    public function setUser(?User $user): self
+    {
+        $this->user = $user;
 
         return $this;
     }
